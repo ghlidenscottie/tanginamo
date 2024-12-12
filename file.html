@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background: radial-gradient(circle, #ff9a9e, #fecfef);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      color: #e63946;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 15px 0;
+    }
+
+    .heart {
+      color: #e63946;
+      font-size: 2rem;
+      animation: heartbeat 1s infinite;
+    }
+
+    button {
+      background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mwamwa <div Mwamwa=""></div> ❤️</h1>
+    <p>
+      I couldn't find the perfect way to say how I feel about you, so I created this instead. <span class="heart">💖</span>
+    </p>
+    <p>
+      Just know that you brighten my days and make my world a better place. I hope this brings a smile to your face, just like you always bring to mine.
+    </p>
+    <p>
+      So, will you be the one to make my life even more magical? <br>
+      Click below to see how much I adore you!
+    </p>
+    <button onclick="showLove()">Reveal My Love</button>
+  </div>
+
+  <script>
+    function showLove() {
+      alert("You mean the world to me, and I can't wait to see where our story goes! 💕");
+    }
+  </script>
+</body>
+</html>
